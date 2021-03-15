@@ -1,0 +1,40 @@
+body {
+  background-color: #122b1b;
+  color: #69d3b3;
+}
+
+h1 {
+  position: relative;
+  left: 10%;
+}
+
+#connect{
+  position: fixed;
+  left: 10%;
+}
+
+#time {
+  position: sticky;
+  text-align: center;
+  left: 38%;
+}
+
+#messages {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-size: 25px;
+}
+
+#recordings {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-size: 25px;
+}
