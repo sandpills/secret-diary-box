@@ -104,10 +104,6 @@ function startRecording() {
     
     var constraints = { audio: true, video:false }
 
- 	/*
-    	Disable the record button until we get a success or fail from getUserMedia() 
-	*/
-
 	recordButton.disabled = true;
 	stopButton.disabled = false;
 
@@ -129,7 +125,6 @@ function startRecording() {
 
 		/*  assign to gumStream for later use  */
 		gumStream = stream;
-		
 		/* use the stream */
 		input = audioContext.createMediaStreamSource(stream);
 
@@ -183,7 +178,7 @@ function createDownloadLink(blob) {
 	//save to disk link
 	link.href = url;
 	link.download = filename+".wav"; //download forces the browser to donwload the file using the  filename
-	link.innerHTML = "Save to disk";
+	link.innerHTML = "download";
 
 	//add the new audio element to li
 	li.appendChild(au);
