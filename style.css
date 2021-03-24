@@ -1,22 +1,58 @@
 body {
-  background-color: #122b1b;
-  color: #69d3b3;
+  background-color: #d1c7c0;
+  color: #331000;
 }
 
 h1 {
+  font-family: "Bitter", serif;
+  font-weight: 400;
+  font-size: 20pt;
   position: relative;
-  left: 10%;
+  left: 5%;
 }
 
-#connect{
-  position: fixed;
-  left: 10%;
+audio {
+  height: 2em;
+}
+
+li {
+  font-size: 14pt;
+  font-family: "Chivo", sans-serif;
+  font-weight: 300;
+}
+
+#connect {
+  position: absolute;
+  left: 5.5%;
+  display: block;
+}
+
+#placeholder {
+  position: static;
+  background-color: rgb(255, 167, 51);
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 167, 51) 25%,
+    rgb(23, 104, 255) 50%,
+    rgb(255, 167, 51) 75%
+  );
+  margin-top: 4.2em;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 0.2em;
+}
+
+#controls {
+  display: none;
 }
 
 #time {
-  position: sticky;
-  text-align: center;
-  left: 38%;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  font-family: "Bitter", serif;
+  font-weight: 400;
+  font-size: 12pt;
 }
 
 #messages {
@@ -30,11 +66,16 @@ h1 {
 }
 
 #recordings {
-  position: absolute;
-  text-align: center;
+  position: static;
+  color: #331000;
+  width: 100%;
+  padding-left: 3%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: left;
   left: 50%;
-  top: 40%;
-  transform: translate(-50%, -50%);
+  top: 30%;
+  /* transform: translate(-50%, -50%); */
   z-index: 2;
   font-size: 25px;
 }

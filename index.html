@@ -12,23 +12,25 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <p><span id="time"></span></p><br>
 
-    <h1>click to connect</h1>
+    <h1>Hello, welcome to your secret diary box</h1>
     <input type="button" id="connect" value="connect">
-    <div id="messages"> <span id="statetext"></span></div>
+    <div id= "placeholder">
+      <div id="messages"> <span id="statetext"></span></div>
+    </div>
 
     <!-- Recording... -->
     <div id="recordings">
       <div id="controls">
-        <button id="recordButton">Record</button>
-        <button id="stopButton" disabled>Stop</button>
+          <button id="recordButton">Record</button>
+          <button id="stopButton" disabled>Stop</button>
       </div>
-      <p><strong>Recordings:</strong></p>
       <ol id="recordingsList"></ol>
     </div>
 

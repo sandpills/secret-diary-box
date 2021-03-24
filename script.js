@@ -170,6 +170,11 @@ function createDownloadLink(blob) {
 
 	//name of .wav file to use during upload and download (without extendion)
 	var filename = new Date().toISOString();
+		
+	//recording time
+	li.appendChild(document.createTextNode(new Date().toString()));
+	li.appendChild(document.createElement("br"));
+	li.appendChild(document.createElement("br"));
 
 	//add controls to the <audio> element
 	au.controls = true;
@@ -182,17 +187,15 @@ function createDownloadLink(blob) {
 
 	//add the new audio element to li
 	li.appendChild(au);
-	
-	//add the filename to the li
-	li.appendChild(document.createTextNode(filename+".wav "))
 
 	//add the save to disk link to li
 	li.appendChild(link);
+	li.appendChild(document.createTextNode (" "))//add a space in between
 	
 	//upload link
 	var upload = document.createElement('a');
 	upload.href="#";
-	upload.innerHTML = "Upload";
+	upload.innerHTML = "upload";
 	upload.addEventListener("click", function(event){
 		  var xhr=new XMLHttpRequest();
 		  xhr.onload=function(e) {
